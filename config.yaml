@@ -1,0 +1,17 @@
+ftp:
+  server: ftp.****.ru
+  user: *
+  password: *
+  dir: /f3tailweb/release/
+  pattern: index_*.json
+  period: 1
+
+smtp:
+  host: smtp.***
+  port: "25"
+  from: *
+  password: *
+  to:
+    - vg_varankin1@protek.ru
+  subject: Выложена новая версия
+  text: Здравствуйте. Выложена новая сборка (на ftp.****.ru), с составом файлов сборки можно ознакомиться ниже ||
